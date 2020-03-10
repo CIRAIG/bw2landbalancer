@@ -10,15 +10,12 @@ f = open('README.md')
 readme = f.read()
 f.close()
 
-f = open('LICENSE.txt')
-license_text = f.read()
-f.close()
-
 setup(
     name='bw2landbalancer',
-    version="0.1",
+    version="0.1.01",
     packages=find_packages(),
     author="Pascal Lesage",
+    license="MIT; LICENSE.txt",
     author_email="pascal.lesage@polymtl.ca",
     install_requires=[
         'brightway2',
